@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Upload</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      body,
+      h1 {
+        font-family: "Raleway", sans-serif;
+        font-size: 2vw;
+      }
+      body, html {height: 100%; margin: 0;}
+      .bgimg {
+        background-image: url('http://52.15.229.128:8080/img/background.png');
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+      }
+      .center {
+  	margin-left: auto;
+	margin-right: auto;
+      }
+      .jumbotron{
+	background: rgba(215,215,215,0.85);
+      }
+      input[type="file"] {
+    display: none;
+}
+.btn-success {
+        background-color: #006633;
+      }
+    </style>
+  </head>
+  <body>  
+    <div class="bgimg w3-display-container w3-animate-opacity">
+<br/>
+	<div class="d-flex align-items-center">
+	<div class="container">
+		<div class="jumbotron text-center">      
+       
+    <div>
+    <h3> Don't just share, show!</h3>
+    <h3> Upload an image!</h3>
+        <table border='0' class="center">    
+          <form enctype="multipart/form-data" method="POST" action="http://52.15.229.128:8080/uploadimage696467a7">
+            <input type="file" id="image" name="image" hidden />
+            <label class="btn btn-success btn-lg" for="image"> Select Image </label>
+            <br/>
+            <br/>
+            <input id="submit" type="submit" hidden />
+            <label class="btn btn-success btn-lg" for="submit"> Upload Image </label>
+          </form>
+ </table>
+<br/>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+  </body>
+</html>
+
